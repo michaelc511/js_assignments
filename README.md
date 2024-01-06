@@ -7,4 +7,5 @@ To start an html template
   4. Make sure to open your Chrome browser and 'inspect' it to view the 'console' tab.
 
 References
-  * https://youtu.be/tbqVqP5ilzQ?si=DvGTXnULHuLctXj3
+  * JS Prep 90 min: https://youtu.be/tbqVqP5ilzQ?si=DvGTXnULHuLctXj3
+  * Top 100 JS Questions 3 hours: https://youtu.be/AUTO7ALJk2U?si=5U-W4-Jq034x2BnK
