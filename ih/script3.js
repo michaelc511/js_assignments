@@ -49,4 +49,4 @@ console.log('Array.from()', Array.from(arrLike));
 var arr3 = Array.prototype.slice.call(arrLike);
 console.log(arr3);
 
-/// Chap 5 Loops ///////////////////////////////////////////////
+/// Chap 5 Loops //////////////////////////////////////////////
