@@ -1,4 +1,5 @@
 // Functions in JS
+// JS Prep 90 min: https://youtu.be/tbqVqP5ilzQ?si=DvGTXnULHuLctXj3 
 // 1-9 Function definitions, IIFE, Scope, Hoisting 
 
 // 1 Func declarations

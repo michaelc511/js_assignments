@@ -1,5 +1,5 @@
 // Functions in JS
-
+// JS Prep 90 min: https://youtu.be/tbqVqP5ilzQ?si=DvGTXnULHuLctXj3
 // 10 params vs args 
 
 function square(num) { // params
@@ -28,7 +28,7 @@ multiply(...arr); // arguments passed using 'spread'
 // fn(5,6,3,7);
 
 const fn2 = (a, x, y, ...numbers) => {
-  console.log(a, x, y, numbers[0]); // gets an error that 'Rest parameter must be last'
+  console.log('rest', a, x, y, numbers[0]); // gets an error that 'Rest parameter must be last'
 }
 
 fn2(5,6,3,7);
