@@ -189,3 +189,52 @@ console.log('42 impure:', addTot(1));
 
 console.log('42 impure:', addTot(1));
 console.log('42 impure:', addTot(1));
+
+// 43 Function currying
+
+function multiply4(a,b){
+  return a * b;
+}
+
+
+function curriedMultiply(a){
+  return function(b) {
+    return a * b;
+  }
+}
+
+const double = curriedMultiply(2);
+console.log('43 Curried ex:', double(5));  // 2 * 5 = 10
+
+// define a func using 'this' context and an arg
+function sayHello(msg){
+  // console.log(`${msg}, ${this.name}`); 
+  console.log('Name', msg, this.name)
+}
+
+const person4 = {name: 'Tony'};
+
+// 44 Call - use the 'call' method to invoke the func with a specific context and arg
+
+sayHello.call(person, 'Hello');
+
+// 45 Apply - use the 'apply' method to invoke the func w specific context and an array of args
+sayHello.apply(person, ['Hi']);
+
+// 46 Bind - Creates a new func w a specific context but not invoking it
+const greetPerson = sayHello.bind(person4);
+greetPerson('Greetings');
+
+
+
+
+
+
+
+
+
+
+
+
+
+
