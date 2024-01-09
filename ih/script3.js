@@ -2,7 +2,7 @@
 // Top 100 JS Questions 3 hours: https://youtu.be/AUTO7ALJk2U?si=5U-W4-Jq034x2BnK
 
 
-/// Chap 5 Loops 27-30 //////////////////////////////////////////////
+/// Chap 5 Loops 24-30 //////////////////////////////////////////////
 
 // 24 for loop
 
