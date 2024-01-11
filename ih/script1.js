@@ -1,5 +1,6 @@
 // Functions in JS
 // Top 100 JS Questions 3 hours: https://youtu.be/AUTO7ALJk2U?si=5U-W4-Jq034x2BnK
+// Google Notes: https://docs.google.com/document/d/e/2PACX-1vScDUMqQCttLaaJBnHu1TsnlLhYyBTmJt8k7C-x9jJWzj63E7lXe_DWIXXaFPV6dhT470Nx2HG-Bj1l/pub 
 
 // 1 Scopes
 
