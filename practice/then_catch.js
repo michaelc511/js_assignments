@@ -1,4 +1,5 @@
 // makeRequest returns a promise w resolve and reject with .then() and .catch()
+// Youtube video: https://www.youtube.com/watch?v=V_Kr9OSfDeU
 
 function makeRequest(location){
   return new Promise((resolve, reject)=>{
