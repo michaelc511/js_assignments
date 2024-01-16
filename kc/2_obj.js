@@ -8,10 +8,12 @@
 
 let str = 'Convert me to an object please.';
 
+// create empty object
 let obj = {};
 
+// use for...of str for each char
 for (let char of str) {
-  !obj[char] ?  // check if the obj has this char?
+  !obj[char] ?  // check if the obj has this char? obj['C']? 
     obj[char] = 1  // if not, assign it to 1
     :
     obj[char]++;  // if yes, just increment it

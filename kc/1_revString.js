@@ -13,7 +13,7 @@ console.log(arr.reverse());
 // turn an array to a string
 console.log(arr.join("")) // Use '' to join arr elements to string
 
-// iteration of a string using 'for...let of'
+// iteration of a string using 'for...let of' //
 let str = 'hello';
 
 for(let char of str){
@@ -48,17 +48,34 @@ arr2.forEach((elem)=>{
  
 
 function revStr(str){ 
-  console.log('Using methods to reverse str', str.split('').reverse().join(''));
+  
+  let arr = str.split('');
+  arr.reverse();
+  
+  let str2 = arr.join('');
+
+  console.log('Reverse a String Using methods to reverse str', str2);
+  
+  // chained solution
+  //str.split('').reverse().join(''));
+  
+  return str2;
+  //return;
 }
-revStr('Hi there');
+
+console.log('Running reverseStr', revStr('Hi there'));
 
 // Reverse a string using for loop, no array and string methods
 (function rev(str){
   let reversed = '';
   for(let char of str){ // we just append each char to the new string reversed 
+    // str = hello
+    // 0 = h +''
+    // 1 = 'e'+'h'
+    // end = 'olleh';
     reversed = char + reversed;
   }
-  console.log('Reversed:', reversed);
+  console.log('1b - Reversed:', reversed);
 })('You too');
 
 
@@ -66,14 +83,16 @@ revStr('Hi there');
 function isPalindrome(str){
   let reversed = str.split('').reverse().join('');
   if(reversed === str){
-    console.log('Yes', reversed, 'is', str );
+    console.log('2 - Yes', reversed, 'is', str );
+    return true;
   } else {
-    console.log('No', reversed, 'is not', str);
+    console.log('2- No', reversed, 'is not', str);
+    return false;
   }
 }
 
-isPalindrome('abba');
+isPalindrome('abba'); // true
 
-isPalindrome('ribs');
+isPalindrome('ribs'); // false
 // 
 // console.log('', );
