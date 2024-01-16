@@ -24,8 +24,8 @@ JS Coding Exercises
   3. Blog/Google Notes https://docs.google.com/document/d/1ZW6a8qf8APQJyHFLn-_hb2ZrJD-2GlqY3bkz8Vl-SCw/edit?usp=sharing
   4. Description/Directory: ./kc
 
-JS Coding Exerises RC
-  1. Git:
+JS Coding Exerises Roadside Coder
+  1. Git: https://github.com/piyush-eon/frontend-interview-questions/tree/master/data-structure-interview-questions
   2. Vid:* RoadsideCoder https://youtu.be/0kafYiWEVpU?si=2NkSk1hkd4qtNqvK    
   3. Blog:  
   4. Description/Directory: ./rsc
