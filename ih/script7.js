@@ -105,19 +105,98 @@ const person5 = {
   age: 30,
 };
 
-for(let prop in person5){
-  console.log('65 for...in obj:', person5[prop]);
+for (let prop in person5) {
+  console.log("65 for...in obj:", person5[prop]);
 }
 
 // 66 using Object.keys() and forEach()
-Object.keys(person5).forEach((prop)=>{
-  console.log('66 Object.keys forEach:', person5[prop]);
-
-})
+Object.keys(person5).forEach((prop) => {
+  console.log("66 Object.keys forEach:", person5[prop]);
+});
 
 // 67 using Object.keys() and forEach()
-Object.values(person5).forEach((value)=>{
-  console.log('67 Object.keys forEach:', person5[value]);
+Object.values(person5).forEach((value) => {
+  console.log("67 Object.keys forEach:", person5[value]);
+});
 
-})
+// 68 .hasOwnProperty Check if a property exists in an object
 
+let person8 = {
+  name: "Jane",
+  age: 24,
+};
+
+console.log("68 hasOwnProperty()", person8.hasOwnProperty("name"));
+
+console.log("68 hasOwnProperty()", person8.hasOwnProperty("city"));
+
+// 69 Clone and copy an object
+
+// spread
+
+const originalObj = {
+  name: "Fred",
+  age: 33,
+  address: {
+    city: "NYC",
+    country: "USA",
+  },
+};
+
+// spread
+const clonedObjSpread = { ...originalObj };
+
+// Object.assigned()
+const clonedObjAssign = Object.assign({}, originalObj);
+
+// JSON.parse() and JSON.stringify()
+const clonedObjJSON = JSON.parse(JSON.stringify(originalObj));
+
+// 70 Deep vs Shallow copy
+
+const shallowCopy = Object.assign({}, originalObj);
+shallowCopy.address.city = "LA";
+
+console.log("70:", originalObj.address.city);
+console.log("70:", shallowCopy.address.city);
+console.log(originalObj === shallowCopy);
+
+const deepCopy = JSON.parse(JSON.stringify(originalObj));
+deepCopy.city = "SF";
+
+console.log("70:", originalObj.address.city);
+console.log("70:", deepCopy.address.city);
+
+// 71 Set object - uniuque values, can add and delete
+
+const uniqueNums = new Set();
+uniqueNums.add(5);
+uniqueNums.add(10);
+uniqueNums.add(5); // ignore duplicate
+
+console.log("71:", uniqueNums);
+
+console.log("71 size:", uniqueNums.size);
+
+console.log("71 has:", uniqueNums.has(10));
+uniqueNums.delete(10);
+console.log("71 size after delete:", uniqueNums.size);
+
+// 72 Map obj key-value pairs
+
+const personDets = new Map();
+personDets.set("name", "Alice");
+personDets.set("age", 33);
+console.log("72 map:", personDets.get("name"));
+console.log("72 map:", personDets.has("name"));
+console.log("72 map:", personDets.delete("age"));
+console.log("72 map:", personDets.size);
+
+// 73
+console.log(
+  "73 Obj: keys are limited to strings and symbols, no order of keys, useful when keys or symbols are simple "
+);
+
+console.log(
+  "72 map: keys are any data type, ordered of keys as inserted, useful for diff types "
+);
