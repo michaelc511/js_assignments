@@ -8,18 +8,18 @@ To start an html template
 
 JS Prep References
   1. Git: N/A
-  2. Vid:  FreeCodeCamp JS Prep 90 min: https://youtu.be/tbqVqP5ilzQ?si=DvGTXnULHuLctXj3
+  2. Vid: FreeCodeCamp JS Prep 90 min: https://youtu.be/tbqVqP5ilzQ?si=DvGTXnULHuLctXj3
   3. Blog:  
   4. Description/Directory: ./fcc
 
 Top 100 JS Questions    
-  1. Git:
-  2. Vid:  * Interviewer Happy - Top 100 JS Questions 3 hours: https://youtu.be/AUTO7ALJk2U?si=5U-W4-Jq034x2BnK   
-  3. Blog/Google Notes: https://docs.google.com/document/d/e/2PACX-1vScDUMqQCttLaaJBnHu1TsnlLhYyBTmJt8k7C-x9jJWzj63E7lXe_DWIXXaFPV6dhT470Nx2HG-Bj1l/pub
+  1. Git: N/A
+  2. Vid: Interviewer Happy - Top 100 JS Questions 3 hours: https://youtu.be/AUTO7ALJk2U?si=5U-W4-Jq034x2BnK   
+  3. Blog/Google Notes: https://docs.google.com/document/d/1bDavFiZwiAV1OuBXhe7eADEvUoBkjC1UHQbpWA90lQk/edit?usp=sharing
   4. Description/Directory: ./ih
 
 JS Coding Exercises 
-  1. Git:
+  1. Git: N/A
   2. Vid: Kunlecoder Video 13+ videos 2 hours: https://www.youtube.com/playlist?list=PLD_PIFu4jYOuMnFRKQbl21_jZvtxsIFuz    
   3. Blog/Google Notes https://docs.google.com/document/d/1ZW6a8qf8APQJyHFLn-_hb2ZrJD-2GlqY3bkz8Vl-SCw/edit?usp=sharing
   4. Description/Directory: ./kc
@@ -33,5 +33,5 @@ JS Coding Exerises Roadside Coder
 JS Fundamentals  
   1. Git:
   2. Vid:  
-  3. Blog:   * Practice Promises, .then, .catch, async and await, etc. 
+  3. Blog: Practice Promises, .then, .catch, async and await, etc. 
   4. Description/Directory: ./practice
