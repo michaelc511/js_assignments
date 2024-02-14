@@ -193,10 +193,6 @@ console.log("72 map:", personDets.delete("age"));
 console.log("72 map:", personDets.size);
 
 // 73
-console.log(
-  "73 Obj: keys are limited to strings and symbols, no order of keys, useful when keys or symbols are simple "
-);
+console.log("73 Obj: keys are limited to strings and symbols, no order of keys, useful when keys or symbols are simple ");
 
-console.log(
-  "72 map: keys are any data type, ordered of keys as inserted, useful for diff types "
-);
+console.log("72 map: keys are any data type, ordered of keys as inserted, useful for diff types ");

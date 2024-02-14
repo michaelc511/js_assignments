@@ -4,7 +4,7 @@
 
 // 1 Func declarations
 
-function square(num){
+function square(num) {
   return num * num;
 }
 
@@ -12,7 +12,7 @@ console.log(square(2));
 
 // 2 Func expression 
 // assign it to a variable using an anoyomous func
-const square2 = function (num){
+const square2 = function (num) {
   return num * num;
 }
 
@@ -29,7 +29,7 @@ displaySquare3(square);
 
 // 4. IIFE Immedicaly Invoked Function Expression
 
-(function square4(num){
+(function square4(num) {
   console.log('IIFE: ', num * num);
 })(3);
 
@@ -41,8 +41,8 @@ displaySquare3(square);
 // lexically out of its scope.
 // Closures are created when a new func is created as it has reference to outer scope
 
-(function(x){
-  return (function (y){
+(function (x) {
+  return (function (y) {
     console.log(x); // outputs 1
   })(2);
 })(1);
@@ -50,20 +50,20 @@ displaySquare3(square);
 // 6. Func scope
 
 // global scope.
-var num1=20, num2=3, name='Michael C';
+var num1 = 20, num2 = 3, name = 'Michael C';
 
 function multiply() {
-  return num1 * num2;
+return num1 * num2 
 }
 
 console.log(multiply()); // returns 60
 
 // neseted func ex
-function getScore(){
-  var num1 = 2, num2=3;
+function getScore() {
+  var num1 = 2, num2 = 3;
 
   function add() {
-    return name + " scored: " + (num1+ num2);
+    return name + " scored: " + (num1 + num2);
   }
 
   return add();
@@ -97,15 +97,15 @@ functionName();
 // undefined
 console.log(x);
 
-function functionName(){ 
+function functionName() {
   console.log('workattech');
 }
-var x=5;
+var x = 5;
 
 // example 2 x is in the func but still undefined
 functionName2();
 
-function functionName2(){ 
+function functionName2() {
   console.log(x);
   var x = 5;
   console.log('workattech');
@@ -116,9 +116,9 @@ function functionName2(){
 
 var z = 21;
 
-var fun = function (){ 
+var fun = function () {
   console.log('fun(): ', z); // shows 20, but undef if we have it defined below
-  var z = 20; 
+  var z = 20;
 }
 
 fun();

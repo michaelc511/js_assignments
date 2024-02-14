@@ -4,10 +4,58 @@
 
 /// Chap 1 Intro 1-10 //////////////////////////////////////////////
 
-// 1 Scopes
+// a function that calculates the day between two dates
+function daysBetweenDates(date1, date2) {
+  // get difference in milliseconds
+  let diff = date1 - date2;
+  // convert to days
+  return diff / (1000 * 60 * 60 * 24);
+}
 
-// global
-let globalVar = "global";
+// generate a function to reverse a string and show multiple ways to do it
+function reverseString(str) {
+  // split string into array of chars
+  let charList = str.split("");
+  // reverse array
+  let reversedCharList = charList.reverse();
+  // join array into string
+  let reversedStr = reversedCharList.join("");
+  // return string
+  return reversedStr;
+}
+
+// now use it
+console.log(reverseString("hello"));
+  
+ 
+
+
+
+  
+
+// function that calculates the day between two dates
+/**
+ * Calculates the number of days between two dates.
+ *
+ * @param {Date} date1 - The first date.
+ * @param {Date} date2 - The second date.
+ * @returns {number} The number of days between date1 and date2.
+ */
+function daysBetweenDates(date1, date2) {
+  if (!(date1 instanceof Date) || !(date2 instanceof Date)) {
+    throw new Error('Both date1 and date2 must be Date objects');
+  }
+
+  // Get the difference in milliseconds
+  const diff = date1 - date2;
+
+  // Convert the difference from milliseconds to days
+  // There are 1000 milliseconds per second, 60 seconds per minute,
+  // 60 minutes per hour, and 24 hours per day
+  return diff / (1000 * 60 * 60 * 24);
+}
+
+
 
 function greet() {
   let funcVar = "function";
