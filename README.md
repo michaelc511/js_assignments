@@ -41,7 +41,7 @@ JSON
   2. Vid: https://www.youtube.com/playlist?list=PLXqOQRPHA5lsPeb6CzuKDhNJOvSlNeZKP
   3. Blog: https://chorezap.blogspot.com/2024/02/json.html 
   4. Description/Directory: ./json_practice
-  \JSON.parse(str)
-  \JSON.stringify(obj)
-  \for loops
+  JSON.parse(str)\
+  JSON.stringify(obj)
+  for loops
      
