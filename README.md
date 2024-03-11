@@ -49,8 +49,16 @@ JSON
   for (let in..) for obj[]\
   for (let of..) for obj.attr\
      
-Sample Project  
+Responsive
   1. Git:
   2. Vid:  
   3. Blog:   
-  4. Description/Directory: ./projects
+  4. Description/Directory: ./responsive
+
+Cookies
+  1. Git: https://codepen.io/beaucarnes/pen/KmeRMx?editors=0011
+  2. Vid:  
+  FCC https://www.youtube.com/watch?v=AwicscsvGLg
+
+  3. Blog: https://docs.google.com/document/d/1xBITYRQxHNIWkR7-P3pWj9H_sfXM4RvO1yQTCXmkFJ8/edit  
+  4. Description/Directory: ./cookies

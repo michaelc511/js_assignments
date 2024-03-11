@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Cookie Example</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"
+    />
+    <style>
+      /* Your CSS styles go here */
+      .table {
+        margin-top: 10px;
+        box-shadow: 0px 0px 3px 5px purple;
+      }
+      table {
+        background: white;
+      }
+
+      body {
+        background: plum;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Welcome to the Cookie Example</h1>
+
+    <div class="container">
+      <h1 class="text-center">Cookies vs. Local Storage vs. Session Storage</h1>
+      <table class="table table-striped">
+        <thead class="thead-inverse">
+          <tr>
+            <th></th>
+            <th>Cookies</th>
+            <th>Local Storage</th>
+            <th>Session Storage</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Capacity</th>
+            <td>4kb</td>
+            <td>10mb</td>
+            <td>5mb</td>
+          </tr>
+          <tr>
+            <th scope="row">Browsers</th>
+            <td>HTML4 / HTML 5</td>
+            <td>HTML 5</td>
+            <td>HTML 5</td>
+          </tr>
+          <tr>
+            <th scope="row">Accessible from</th>
+            <td>Any window</td>
+            <td>Any window</td>
+            <td>Same tab</td>
+          </tr>
+          <tr>
+            <th scope="row">Expires</th>
+            <td>Manually set</td>
+            <td>Never</td>
+            <td>On tab close</td>
+          </tr>
+          <tr>
+            <th scope="row">Storage Location</th>
+            <td>Browser and server</td>
+            <td>Browser only</td>
+            <td>Browser only</td>
+          </tr>
+          <tr>
+            <th scope="row">Sent with requests</th>
+            <td>Yes</td>
+            <td>No</td>
+            <td>No</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <script>
+      // Your JavaScript code goes here
+      /* cookies vs local storage vs session storage */
+
+      // Local Storage
+      // 1 add a key-value pair where 'lunch' is the key and 'cereal' is the value
+      localStorage.setItem("lunch", "cereal");
+      // 2 retrieve the value of the key 'lunch' from local storage
+      console.log("localstorage:", localStorage.getItem("lunch"));
+      // 3 remove the key-value pair from local storage
+      localStorage.removeItem("lunch");
+      // 4 clear all key-value pairs from local storage
+      localStorage.clear();
+
+      // Session Storage
+      // 1 add a key-value pair where 'dinner' is the key and 'pasta' is the value'
+      sessionStorage.setItem("dinner", "pasta");
+      // 2 retrieve the value of the key 'dinner' from session storage
+      console.log("sessionstorage:", sessionStorage.getItem("dinner"));
+      // 3 remove the key-value pair from session storage
+      sessionStorage.removeItem("dinner");
+      // 4 clear all key-value pairs from session storage
+      sessionStorage.clear();
+
+      // Cookie
+      // 1 add a cookie with the name 'hello' and the value 'true'
+      document.cookie = "hello=true";
+      // 2 Set the expiration date of the cookie 'doSomethingOnlyOnce' to 'true' to 31 Dec 9999
+      document.cookie =
+        "doSomethingOnlyOnce=true; expires=Fri, 31 Dec 9999 23:59:59 GMT";
+      // 3 set the path of the cookie 'person' to 'beau' to '/' to be accessible from any path
+      document.cookie =
+        "person=beau; expires=Fri, 31 Dec 9999 23:59:59 GMT; path=/";
+
+      //   // 4 Delete the cookie 'person'
+      document.cookie =
+        "person=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+
+      console.log(document.cookie);
+
+      /*
+        Local Storage
+        Local Storage is a web storage option allowing websites to store data persistently in a user's browser. 
+        With a typical storage limit of 5-10MB, it surpasses cookies in capacity, enabling developers to store 
+        more complex or larger quantities of data. Data stored in Local Storage remains until explicitly cleared, 
+        either by the user or through the web application's code. This makes it particularly useful for storing 
+        user preferences, application state, and other data that should persist across sessions and browser restarts. 
+        Unlike cookies, Local Storage data is not automatically sent to the server with every HTTP request, making it a 
+        more efficient choice for data that does not need to be consistently shared with the server.
+
+        Session Storage
+        Session Storage is similar to Local Storage in terms of API and storage capacity but differs significantly 
+        in lifespan and scope. Data stored in Session Storage is available for the duration of the page session, 
+        which ends when the tab or browser window is closed. This makes Session Storage ideal for storing data 
+        that should only be maintained during a single session and not persist beyond that, such as data related 
+        to a single workflow or transaction in a web application. Each browser tab has its own isolated Session Storage,
+        ensuring that data stored in one tab is not accessible from another, enhancing security and privacy.
+
+        Cookies
+        Cookies are a crucial component of web development, used primarily for session management, user tracking, 
+        and storing small pieces of data (up to about 4KB) directly in the browser. Cookies are automatically sent with 
+        every HTTP request to the domain that set them, making them useful for authenticating user sessions, maintaining 
+        user preferences across visits, and tracking user behavior for analytics. However, due to their size limitation 
+        and the performance impact of sending data with every request, cookies are less suitable for storing large amounts 
+        of data. Additionally, security considerations must be taken into account when using cookies, as they can be 
+        susceptible to cross-site scripting (XSS) and cross-site request forgery (CSRF) attacks if not properly secured.
+
+      */
+    </script>
+  </body>
+</html>
