@@ -49,3 +49,8 @@ JSON
   for (let in..) for obj[]\
   for (let of..) for obj.attr\
      
+Sample Project  
+  1. Git:
+  2. Vid:  
+  3. Blog:   
+  4. Description/Directory: ./projects

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Responsive Menu with Multiple Breakpoints</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+      }
+      .menu {
+        background: #333;
+        overflow: hidden;
+      }
+      .menu a {
+        float: left;
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+      .menu a:hover {
+        background-color: #ddd;
+        color: black;
+      }
+
+      /* Large desktops */
+      @media (min-width: 1440px) {
+        .menu a {
+          padding: 14px 16px; /* Further increase padding for larger screens */
+        }
+      }
+
+      /* Medium desktops */
+      @media (min-width: 1025px) {
+        .menu a {
+          padding: 12px 14px; /* Increase padding for more space */
+        }
+      }
+
+      @media (max-width: 1024px) {
+        /* Tablets and small desktops */
+        .menu a {
+          padding: 12px 14px;
+        }
+      }
+
+      @media (max-width: 768px) {
+        /* Tablets in portrait mode */
+        .menu a {
+          float: none;
+          display: block;
+          text-align: left;
+        }
+      }
+
+      @media (max-width: 600px) {
+        /* Mobile phones */
+        .menu a {
+          padding: 10px 12px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="menu">
+      <a href="#home">Home</a>
+      <a href="#news">News</a>
+      <a href="#contact">Contact</a>
+      <a href="#about">About</a>
+    </div>
+
+    <div
+      style="
+        padding: 20px;
+        margin-top: 30px;
+        background-color: #1abc9c;
+        color: white;
+      "
+    >
+      <h2>Responsive Menu Example</h2>
+      <p>
+        This menu adapts to different screen widths for an optimal viewing
+        experience across devices. Resize the browser window to see the effect.
+      </p>
+    </div>
+  </body>
+</html>
+
+<!-- 
+
+    
+To accommodate a wider range of devices with more specific breakpoints, you can introduce additional CSS media queries for desktop browsers, tablets, and smartphones. This approach will provide a more tailored user experience across devices. The typical breakpoints you might consider are:
+
+Large screens / desktops: Above 1024px
+Tablets (in landscape mode): Between 768px and 1024px
+Tablets (in portrait mode) / Small desktops: Between 600px and 767px
+Mobile phones: Less than 600px
+Here's an updated version of the HTML with CSS that includes these breakpoints:
+
+This code snippet provides a responsive menu that adapts across multiple breakpoints:
+
+Above 1024px: The menu items have a bit more padding, suitable for desktop use where there's more space and possibly mouse (rather than touch) interaction.
+Between 768px and 1024px: Adjustments for tablets in landscape mode or small desktops, slightly reducing the padding for a more compact look.
+Between 600px and 767px: This caters to tablets in portrait mode, where the menu items stack vertically to better use vertical space.
+Less than 600px: Targets mobile phones specifically, with adjusted padding for smaller screens to ensure the menu remains usable.
+Adjust the padding and styling within each breakpoint to better match the design and usability requirements for your specific application.
+
+
+
+
+
+
+
+ -->
